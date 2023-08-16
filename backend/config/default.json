@@ -1,3 +1,4 @@
 {
-	"mongoURL": "mongodb+srv://alin:react05@cluster0.f4v5k.mongodb.net/react05"
+	"mongoURL": "mongodb+srv://alin:react05@cluster0.f4v5k.mongodb.net/react05",
+	"apiURL": "https://mern-dental-clinic.onrender.com"
 }
