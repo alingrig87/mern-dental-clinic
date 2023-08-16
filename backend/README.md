@@ -101,3 +101,55 @@ Follow these steps to create a connection to a MongoDB database from a Node.js a
    }
 
    ```
+
+## Deploy on render
+
+### Prerequisites:
+
+Basic familiarity with Node.js, Express, and Git.
+An account on render.com.
+A Node.js and Express web service codebase ready for deployment.
+
+### Step 1: Sign Up on render.com
+
+If you haven't already, sign up for an account on render.com.
+
+### Step 2: Create a New Service
+
+Log in to your render.com account.
+Click the "Create New" button and select "Web Service."
+Choose the appropriate Git repository where your Node.js and Express web service code is hosted.
+
+### Step 3: Configure Build Settings
+
+After selecting your repository, render.com will detect your application's build settings automatically. If not, you can manually specify the build settings(configure backend folder if needed).
+For Node.js applications, the default build command is usually npm install && npm start.
+
+### Step 4: Add Environment Variables
+
+If your application relies on environment variables, you can add them under the "Environment Variables" section. This is where you would set configurations such as database URLs, API keys, etc. (e.g. mongoURL)
+
+### Step 5: Configure Ports
+
+Under the "Ports" section, specify the port your Express app is listening on. The default port for Express is usually 3000.
+
+### Step 6: Deploy Your Service
+
+Once your configuration is set up, click the "Create Service" button.
+render.com will begin building and deploying your Node.js and Express web service.
+You can view the deployment progress in real-time on the render.com dashboard.
+
+### Step 7: Domain and HTTPS
+
+By default, render.com provides a subdomain for your application (e.g., your-app.onrender.com). You can also add your custom domain under the "Custom Domains" section.
+render.com provides free automatic SSL certificates, ensuring your application is served over HTTPS.
+
+### Step 8: Scaling and Settings
+
+Depending on your application's needs, you can adjust scaling settings to handle more traffic.
+Explore other settings and features on the render.com dashboard, such as environment variables, background workers, and database integrations.
+
+### Step 9: Monitoring and Logs
+
+render.com provides monitoring and logging features to help you track the health and performance of your deployed application.
+Congratulations! You've successfully deployed your Node.js and Express web service on render.com. Your application is now live and accessible to users. Remember to check the render.com documentation for any updates or additional features that may have been introduced since this guide was written.
