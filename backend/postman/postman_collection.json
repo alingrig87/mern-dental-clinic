@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "1e46ed4c-e79e-415d-b33f-3ff79e527ed0",
+		"name": "Mern-dental-clinic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17396853"
+	},
+	"item": [
+		{
+			"name": "GET services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/api/services",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"serviciul 236\",\r\n    \"category\": \"Categoria 3\",\r\n    \"price\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5500/api/services",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Appointments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new appointment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alin\",\r\n    \"issue\": \"Am o durere urgenta de masea\",\r\n    \"date\": \"2 august\",\r\n    \"phone\": \"0734 123 232\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5500/api/appointments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,13 +1,15 @@
-import express from 'express';
+import express from 'express'; // Import the Express framework
+import { connectToDB } from './config/mongoConnection.js'; // Import the connectToDB function from the specified path
+import serviceRouter from './api/service.js'; // Import the service router from the specified path
+import appointmentRouter from './api/appointment.js'; // Import the appointment router from the specified path
 
-// Create an instance of the Express application
-const app = express();
+const app = express(); // Create an instance of the Express application
 
-// Define a route for the root URL and send a response
-app.get('/', (request, response) => response.send('My first response'));
+connectToDB(); // Call the connectToDB function to establish a connection to the MongoDB database
 
-// Specify the port number the server will listen on
-const PORT = 5500;
+app.use('/api/services', serviceRouter); // Use the service router for handling '/api/services' routes
+app.use('/api/appointments', appointmentRouter); // Use the appointment router for handling '/api/appointments' routes
 
-// Start the server and display a message when it's running
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+const PORT = process.env.PORT || 5500; // Specify the port number the server will listen on, using either the environment variable or a default value
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`)); // Start the server and display a message when it's running
