@@ -10,6 +10,7 @@
 		"dev": "concurrently \"npm run dev-fe\" \"npm run dev-be\""
 	},
 	"dependencies": {
-		"concurrently": "^8.2.0"
+		"concurrently": "^8.2.0",
+		"swiper": "^10.1.0"
 	}
 }

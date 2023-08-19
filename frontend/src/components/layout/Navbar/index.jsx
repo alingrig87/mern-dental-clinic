@@ -41,7 +41,7 @@ export const Navbar = () => {
 	};
 
 	return (
-		<div className="shadow-md w-full">
+		<div className="shadow-md w-screen">
 			<div className="md:px-10 py-4 px-7 md:flex justify-between items-center bg-white text-blue-800">
 				<div
 					onClick={onClickMenuButton}
@@ -58,7 +58,7 @@ export const Navbar = () => {
 					className={`md:flex pl-9 md:pl-0 md:items-center md:pb-0 pb-12 md:static absolute md:z-auto
                pr-12 bg-white
                 z-1 left-0 transition-all duration-500 ease-in ${
-									isOpen ? 'top-12' : 'top-[-490px]'
+									isOpen ? 'top-100' : 'top-[-450px]'
 								}`}
 				>
 					{links.map((link, index) => (
